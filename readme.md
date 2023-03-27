@@ -57,5 +57,3 @@ Si todo ha ido bien hasta ahora, la API estará lista para ejecutarse.
 ```bash
   npm start
 ```
-
-Las rutas de API están documentadas en el archivo [Docuemntacion - API](https://github.com/DanielMafra/xarerp-api/blob/main/api-documentation.md), úselo como guía.
