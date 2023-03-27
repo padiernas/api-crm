@@ -59,9 +59,3 @@ If all went well so far, the API will be ready to run.
 ```
 
 API routes are documented in the [api-documentation](https://github.com/DanielMafra/xarerp-api/blob/main/api-documentation.md) file, use it as a guide.
-
-## Author
-
-- Website - [Daniel Mafra](https://danielmafra.github.io)
-- LinkedIn - [@danielmafradev](https://linkedin.com/in/danielmafradev)
-- Instagram - [@danielmafradev](https://instagram.com/danielmafradev)
