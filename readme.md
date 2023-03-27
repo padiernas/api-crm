@@ -1,61 +1,61 @@
-# Xarerp - API
+# API - CRM
 
-System to manage sales, inventory, employees, stores and more.
+Sistema para gestionar ventas, inventario, empleados, tiendas.
 
-## Developed with
+## Desenvolvido com
 
 * [Node](https://nodejs.org/en/)
 * [Express](https://expressjs.com/)
 * [Prisma](https://www.prisma.io/)
 * [PostgreSQL](https://www.postgresql.org/)
 
-This is just the back-end of the application, to have visual references and also get the front-end (created in React), go to: [Xarerp - Client](https://github.com/DanielMafra/xarerp-client)
+Esto es solo el backend de la aplicación, para obtener referencias visuales y también obtener el frontend (creado en React), vaya a: [Xarerp - Client](https://github.com/DanielMafra/xarerp-client)
 
-## Some features
+## Algunas características
 
-* ✅ Authentication persistence using jsonwebtoken
-* ✅ Protected routes
-* ✅ Routes with access permissions based on the logged in user
-* ✅ CRUD for each registration functionality
-* ✅ Rules for not allowing duplicate entries
-* ✅ Search and pagination filters
-* ✅ Metrics from the last 7, 15 and 30 days
+* ✅ Persistencia de autenticación utilizando jsonwebtoken
+* ✅ Rutas protegidas
+* ✅ Rutas con permisos de acceso basados en el usuario que ha iniciado sesión
+* ✅ CRUD para cada funcionalidad de registro
+* ✅ Reglas para no permitir entradas duplicadas
+* ✅ Filtros de búsqueda y paginación
+* ✅ Métricas de los últimos 7, 15 y 30 días
 
-## Running the API
+## Ejecuta la API
 
-After having cloned the repository and accessed its folder through the terminal, run the command below (remember to have installed Node + NPM and PostgreSQL)
+Después de haber clonado el repositorio y accedido a su carpeta a través del terminal, ejecute el siguiente comando (recuerde tener instalado Node + NPM y PostgreSQL)
 
 ```bash
   npm install
 ```
 
-* Rename the .env.example file to just .env and replace the information value with your development environment.
+* Cambie el nombre del archivo .env.example a solo .env y reemplace el valor de la información con su entorno de desarrollo.
 
-* Make sure you activate your PostgreSQL and run the command below to create the tables
+* Asegúrese de activar su PostgreSQL y ejecute el siguiente comando para crear las tablas
 
 ```bash
   npx prisma migrate dev
 ```
 
-* After creating the tables in the database, run the command below to populate the tables with some initial data (don't skip this step)
+* Después de crear las tablas en la base de datos, ejecute el siguiente comando para poblar las tablas con algunos datos iniciales (no omita este paso)
 
 ```bash
   npx prisma db seed
 ```
 
-The previous command has populated some data in the database, and by default you can use the following access credentials to login:
+El comando anterior ha poblado algunos datos en la base de datos y, de manera predeterminada, puede utilizar las siguientes credenciales de acceso para iniciar sesión:
 
 ```bash
   e-mail: user@mail.com
   password: 1234
 ```
 
-If all went well so far, the API will be ready to run.
+Si todo ha ido bien hasta ahora, la API estará lista para ejecutarse.
 
-* Run the command below to activate the API and test it on Insomnia, Postman or your favorite software.
+* Ejecute el siguiente comando para activar la API y probarla en Insomnia, Postman o su software favorito.
 
 ```bash
   npm start
 ```
 
-API routes are documented in the [api-documentation](https://github.com/DanielMafra/xarerp-api/blob/main/api-documentation.md) file, use it as a guide.
+Las rutas de API están documentadas en el archivo api-documentation, úselo como guía.
